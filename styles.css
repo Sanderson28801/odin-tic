@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+}
+.scores {
+  display: flex;
+  gap: 3rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 2rem;
+}
+.container {
+  flex: 1;
+}
+.game {
+  width: 60vh;
+  height: 60vh;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.game button {
+  border: 2px solid black;
+  height: 100%;
+  font-size: 7rem;
+}
+
+footer {
+  margin: 1rem;
+}
+
+.gameOver {
+  position: absolute;
+  top: 44%;
+  text-align: center;
+  display: none;
+  background-color: white;
+}
+
+.gameOver h1 {
+  font-size: 15vh;
+}
+
+.gameOver button {
+  font-size: 10vh;
+  background-color: white;
+}
